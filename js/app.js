@@ -1,11 +1,11 @@
 'use strict';
-let backgrColor, fontColor, nameColor;
+let backgrColor, fontColor, favourColor;
 
 function getColor() {
-	nameColor = document.querySelector('#favourColor').value;
+	favourColor = document.querySelector('#favourColor').value;
 	localStorage.backColor = backgrColor;
 	localStorage.textColor = fontColor;
-	localStorage.name = nameColor;
+	localStorage.name = favourColor;
 }
 
 function setColor(index, color) {
