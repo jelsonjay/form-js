@@ -4,6 +4,13 @@
 }
 body {
 	background: chocolate;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 60px;
 }
 .container {
 	position: absolute;

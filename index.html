@@ -7,65 +7,98 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
+		<h1>change color of text and background</h1>
 		<div class="container">
 			<form id="form">
-				<label>Name</label> <br />
-				<input type="text" name="" id="" size="25" /> <br />
+				<label>My favour color is:</label> <br />
+				<input type="text" name="favourColor" id="favourColor" size="25" />
+				<br />
 				<br />
 				<label for="">Change text color</label><br />
 				<input
 					type="radio"
-					id="font-color"
+					name="font-color"
 					onclick="setColor(0, '#ff0000')"
 				/>Red<br />
 				<input
 					type="radio"
-					id="font-color"
+					name="font-color"
 					onclick="setColor(0, '#ff6600')"
 				/>Orange<br />
 				<input
 					type="radio"
-					id="font-color"
+					name="font-color"
 					onclick="setColor(0, '#00cc66')"
 				/>Green<br />
 				<input
 					type="radio"
-					id="font-color"
+					name="font-color"
 					onclick="setColor(0, '#000')"
 				/>Black<br />
 				<input
 					type="radio"
-					id="background-color"
-					onclick="setColor(1, '#fff')"
+					name="font-color"
+					onclick="setColor(0, '#fff')"
 				/>White<br />
+				<input
+					type="radio"
+					name="font-color"
+					onclick="setColor(0, '#990099')"
+				/>Purple<br />
+				<input
+					type="radio"
+					name="font-color"
+					onclick="setColor(0, '#0066ff')"
+				/>Bule<br />
 
 				<label for="">Change Background Color</label> <br />
 				<input
 					type="radio"
-					id="background-color"
+					name="background-color"
 					onclick="setColor(1, '#ff0000')"
 				/>Red<br />
 				<input
 					type="radio"
-					id="background-color"
+					name="background-color"
 					onclick="setColor(1, '#00cc66')"
 				/>Green<br />
 				<input
 					type="radio"
-					id="background-color"
+					name="background-color"
 					onclick="setColor(1, '#ff6600')"
 				/>Orange<br />
 				<input
 					type="radio"
-					id="background-color"
+					name="background-color"
 					onclick="setColor(1, '#fff')"
 				/>White<br />
 				<input
 					type="radio"
-					id="font-color"
-					onclick="setColor(0, '#000')"
+					name="background-color"
+					onclick="setColor(1, '#000')"
 				/>Black<br />
-				<input type="button" value="Save" onclick="" />
+				<input
+					type="radio"
+					name="background-color"
+					onclick="setColor(1, '#990099')"
+				/>Purple<br />
+				<input
+					type="radio"
+					name="background-color"
+					onclick="setColor(1, '#0066ff')"
+				/>Bule<br />
+				<input
+					type="radio"
+					name="background-color"
+					onclick="setColor(1, '#ffff00')"
+				/>Yellow<br />
+				<input
+					type="radio"
+					name="background-color"
+					onclick="setColor(1, '#CFB53B')"
+				/>Gold<br />
+				<br />
+				<input type="button" value="Save" onclick="getColor()" />
 			</form>
 		</div>
 
