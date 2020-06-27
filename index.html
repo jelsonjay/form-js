@@ -10,7 +10,7 @@
 		<h1>change color of text and background</h1>
 		<div class="container">
 			<form id="form">
-				<label>My favour color is:</label> <br />
+				<label>Type the name of your favour color</label> <br />
 				<input type="text" name="favourColor" id="favourColor" size="25" />
 				<br />
 				<br />
@@ -71,12 +71,14 @@
 					type="radio"
 					name="background-color"
 					onclick="setColor(1, '#fff')"
-				/>White<br />
+				/>
+				White<br />
 				<input
 					type="radio"
 					name="background-color"
 					onclick="setColor(1, '#000')"
-				/>Black<br />
+				/>
+				Black<br />
 				<input
 					type="radio"
 					name="background-color"
@@ -98,7 +100,11 @@
 					onclick="setColor(1, '#CFB53B')"
 				/>Gold<br />
 				<br />
-				<input type="button" value="Save" onclick="getColor()" />
+				<input
+					type="submit"
+					value="Save to Local Storage"
+					onclick="getColor()"
+				/>
 			</form>
 		</div>
 
